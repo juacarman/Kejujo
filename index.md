@@ -11,19 +11,64 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+<html> 
+  <head>
+    <TITLE>Hola</TITLE>
+ <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "description": "EUR/USD",
+      "proName": "NASDAQ:TSLA"
+    },
+    {
+      "description": "USD/COP",
+      "proName": "FX_IDC:USDCOP"
+    }
+  ],
+  "locale": "es"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+ <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_6a224"></div>
+  <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/symbols/NASDAQ-TSLA/" rel="noopener" target="_blank"><span class="blue-text">TSLA gráfico</span></a> por TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+    "width": 980,
+    "height": 610,
+  "symbol": "NASDAQ:TSLA", //aca se escoge la empresa abuscar
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "Dark",
+  "style": "3",
+  "locale": "es",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "container_id": "tradingview_6a224"
+}
+  );
+ 
+  </script>
+</div>
+<!-- TradingView Widget END -->
+  </head>
+  <body BGCOLOR="6B726E">
+   hello Putitos!
+   
+  </body> 
+</html> 
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
